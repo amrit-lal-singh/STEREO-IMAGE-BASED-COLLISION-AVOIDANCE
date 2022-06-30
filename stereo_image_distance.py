@@ -62,7 +62,7 @@ obstacle_location = cv2.minMaxLoc(cross_corr_map)[3]
 # Printing the bike distance
 
 
-distance = depth_map_left[570, 490]
+distance = depth_map_left[obstacle_location[0]+23,obstacle_location[1]+11 ]
 
 print("The distance is ")
 print(distance)
